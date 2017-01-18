@@ -1,8 +1,14 @@
 // Question 1
 
-function selectElementsStartingWithE(array) {
-
-};
+function selectElementsStartingWithE(testArray) {
+	eArray = [];
+	for (i = 0; i < testArray.length; i++) {
+		if (testArray[i].charAt(0) === 'e') {
+			eArray.push(testArray[i]);
+        }
+	}
+	return eArray;
+}
 
 // Question 2
 
