@@ -72,23 +72,38 @@ function dropFirstThreeElements(array) {
 // Question 7
 
 function addElementToBeginningOfArray(array, element) {
-
+	array.unshift(element);
+	return array;
 };
 
 // Question 8
 
 function sortArrayByLastLetterOfEachWord(array) {
-
+var result = [];
+	for (i = 0; i < testArray.length; i++) {
+		result.push(testArray[i].split('').reverse().join(''));
+	}
+	var ans = [];
+	result.sort();
+	for (i = 0; i < result.length; i++) {
+		ans.push(result[i].split('').reverse().join(''));
+	}
+	return ans;
 };
 
 // Question 9
 
 function returnFirstHalfOfString(string) {
+	return string.slice(0, 3);
 
 };
 
 // Question 10
 
 function makeNumberNegative(number) {
-  
+	if(number > 0) {
+		return number * -1;
+	} else {
+		return number;
+	} 
 };
