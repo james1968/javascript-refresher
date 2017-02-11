@@ -29,13 +29,29 @@ function numberOfElementsThatArePalindromes(array) {
 // Question 13
 
 function shortestWordInArray(array) {
-
-};
+	var result = array[0].length;
+	var len = array.length;
+	var ans = array[0];
+	for (i = 1; i < len ; i++) {
+		if (array[i].length <= result) {
+			ans = array[i]; } else {
+			ans = array[i-1];}
+			}
+	return ans
+}
 
 // Question 14
 
 function longestWordInArray(array) {
-
+	var result = array[0].length;
+	var len = array.length;
+	var ans = array[0];
+	for (i = 1; i < len ; i++) {
+		if (array[i].length >= result) {
+			ans = array[i]; } else {
+			ans = array[i-1];}
+			}
+	return ans
 };
 
 // Question 15
