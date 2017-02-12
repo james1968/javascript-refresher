@@ -71,12 +71,12 @@ describe('JavaScript Refresher Questions', function() {
     expect(longestWordInArray(testArray)).toEqual('chocolate');
   });
 
-  xit('15. arrayTotal: return total of number elements in an array', function() {
+  it('15. arrayTotal: return sum of elements in an array', function() {
     testArray = [1,3,5,9,10];
     expect(arrayTotal(testArray)).toEqual(28);
   });
 
-  xit('16. doubleArray: return duplicate of array within a single array and NOT sorted', function() {
+  it('16. doubleArray: return duplicate of array within a single array and NOT sorted', function() {
     testArray = [1,2,3]
     expect(doubleArray(testArray)).toEqual([1,2,3,1,2,3]);
   });
