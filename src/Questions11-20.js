@@ -48,15 +48,18 @@ function arrayTotal(array) {
 
 function doubleArray(array) {
 	var result = [];
-	return result
-
-};
+	result = [1, 2, 3, ];
+	for (i = 0; i < array.length; i++) {
+	result.push(array[i]);
+}
+	return result;
+}
 
 // Question 17
 
 function averageOfArray(array) {
-
-};
+	return Math.round(((array.reduce((a, b) => a + b, 0)) / array.length) * 10) / 10;
+}
 
 // Question 18
 
