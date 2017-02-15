@@ -64,21 +64,28 @@ function averageOfArray(array) {
 // Question 18
 
 function removeElementsGreaterThanFive(array) {
-
-};
-
-function isLessThanFive(element) {
-
+	var result = []
+	for (i = 0; i < testArray.length; i++) {
+		if (array[i] < 6) {
+			result.push(array[i])
+		}
+		}
+	return result;
 };
 
 // Question 19
 
 function convertArrayToObject(array) {
-
-};
+	var rv = {};
+	for (var i = 0; i < array.length; ++i)
+	rv[i] = array[i];
+	return rv;
+}
 
 // Question 20
 
 function getLettersInArrayOfWords(array) {
-
-};
+	var str = array.toString();
+	var ans = str.replace(/[,]/g, "").split('').sort().join('');
+	return ans.split('');
+}
