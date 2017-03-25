@@ -1,8 +1,18 @@
 // Question 21
 
 function swapKeysAndValuesInObject(object) {
+	var new_obj = {};
 
-};
+	  	for (var prop in object) {
+    	if(object.hasOwnProperty(prop)) {
+      	new_obj[object[prop]] = prop;
+    	}
+  	}
+		for (var key in new_obj) {
+      	new_obj[key] = Number(new_obj[key])
+    	}
+  return new_obj;
+}
 
 // Question 22
 
