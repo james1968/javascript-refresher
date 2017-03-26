@@ -30,7 +30,7 @@ function addKeysAndValues(object) {
 // Question 23
 
 function removeCapitalLettersFromString(string) {
-
+  return string.replace( /[A-Z]/g, '' );
 };
 
 // Question 24
