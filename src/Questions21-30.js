@@ -3,13 +3,13 @@
 function swapKeysAndValuesInObject(object) {
 	var new_obj = {};
 
-	  	for (var prop in object) {
-    	if(object.hasOwnProperty(prop)) {
-      	new_obj[object[prop]] = prop;
-    	}
+  	for (var prop in object) {
+      if(object.hasOwnProperty(prop)) {
+      new_obj[object[prop]] = prop;
+      }
   	}
 		for (var key in new_obj) {
-      	new_obj[key] = Number(new_obj[key])
+    	new_obj[key] = Number(new_obj[key])
     	}
   return new_obj;
 }
@@ -17,8 +17,15 @@ function swapKeysAndValuesInObject(object) {
 // Question 22
 
 function addKeysAndValues(object) {
-
-};
+  var array = [];
+  var arr = [];
+  var ans = [];
+  for (var key in object) {
+      array.push(Number(key))
+      arr.push(object[key])
+      }
+      return (array.reduce((a, b) => a + b, 0) + arr.reduce((a, b) => a + b, 0));
+    };
 
 // Question 23
 
