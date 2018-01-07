@@ -59,21 +59,36 @@ function roundDownNumber(number) {
 
 // Question 27
 
-function formatDateNicely(date) {
-
-  };
+function formatDateNicely(date) { 
+  var m_names = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+  var d = new Date(date);
+  var curr_date = d.getDate();
+  var curr_month = d.getMonth();
+  var curr_year = d.getFullYear();
+  return (curr_date + "-" + m_names[curr_month] + "-" + curr_year);
+  }
 
 // Question 28
 
 function getDomainNameFromEmailAddress(email) {
-
-};
+  var name   = email.substring(0, email.lastIndexOf("@"));
+  var domain = email.substring(email.lastIndexOf("@") +1);
+  return domain.split(/[/.]/)[0];
+}
 
 // Question 29
 
 function titleizeString(string) {
-
-};
+  var ans = string.split(", ");
+  var result = [];
+  var words = ['and', 'in', 'the', 'of', 'a', 'an', 'to'];
+  for (i = 0; i < ans.length; i++) {
+    if (words.includes(ans[i])) === false) {
+    return words[i];}
+    else {result.push(i);}
+  }
+  return result;
+}
 
 // Question 30
 
