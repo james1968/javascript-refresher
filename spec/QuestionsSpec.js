@@ -118,17 +118,17 @@ describe('JavaScript Refresher Questions', function() {
     expect(removeCapitalLettersFromString(testString)).toEqual('offee lease andhankou')
   });
 
-  xit('24. everyPossiblePairing: return multidimensional array with every possible pairing and no duplicates', function() {
+  it('24. everyPossiblePairing: return multidimensional array with every possible pairing and no duplicates', function() {
     testArray = ['Emma', 'Samaire', 'Liam'];
     expect(everyPossiblePairing(testArray)).toEqual([['Emma', 'Samaire'], ['Emma', 'Liam'], ['Samaire', 'Liam']]);
   });
 
-  xit('25. roundUpNumber: round all decimal numbers up to the next whole number', function() {
+  it('25. roundUpNumber: round all decimal numbers up to the next whole number', function() {
       expect(roundUpNumber(3.5)).toEqual(4);
       expect(roundUpNumber(8.1623)).toEqual(9);
   });
 
-  xit('26. roundDownNumber: round all decimal numbers down to the previous whole number', function() {
+  it('26. roundDownNumber: round all decimal numbers down to the previous whole number', function() {
     expect(roundDownNumber(3.5)).toEqual(3);
     expect(roundDownNumber(8.1623)).toEqual(8);
   });
