@@ -150,14 +150,14 @@ describe('JavaScript Refresher Questions', function() {
     expect(titleizeString(testString)).toEqual('The Definitive Guide To International Relations In The 21st Century');
   });
 
-  xit('30. checkStringForSpecialCharacters: return true or false if string contains non-alphanumerical characters', function() {
+  it('30. checkStringForSpecialCharacters: return true or false if string contains non-alphanumerical characters', function() {
     stringA = 'abcd1234'
     stringB = 'abcd1234!@#$'
     expect(checkStringForSpecialCharacters(stringA)).toBe(false);
     expect(checkStringForSpecialCharacters(stringB)).toBe(true);
   });
 
-  xit('31. getUpperLimitOfRange: return max value of pre-determined range of numbers', function() {
+  it('31. getUpperLimitOfRange: return max value of pre-determined range of numbers', function() {
     range = Array.apply(null, Array(25)).map(function (_, i) {return i+1;});
     expect(getUpperLimitOfRange(range)).toEqual(25);
   });

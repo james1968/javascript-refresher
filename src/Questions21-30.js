@@ -79,19 +79,17 @@ function getDomainNameFromEmailAddress(email) {
 // Question 29
 
 function titleizeString(string) {
-  var ans = string.split(", ");
+  var ans = string.split(" ");
   var result = [];
-  var words = ['and', 'in', 'the', 'of', 'a', 'an', 'to'];
   for (i = 0; i < ans.length; i++) {
-    if (words.includes(ans[i])) === false) {
-    return words[i];}
-    else {result.push(i);}
+    result.push(ans[i][0].toUpperCase() + ans[i].slice(1));
   }
-  return result;
+  return result.join(" ");
 }
 
 // Question 30
 
 function checkStringForSpecialCharacters(string) {
-
-};
+  if (string.match(/^[a-z0-9]+$/i))  { return false }
+    else { return true }
+}
